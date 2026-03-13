@@ -1,1 +1,8 @@
-# Bilibili-Focus-Extension
+# Bilibili Focus Mode
+一个简单的 Edge/Chrome 插件，用于隐藏 B 站首页推荐，强制使用搜索，对抗短视频沉迷。
+
+## 功能
+- 隐藏首页视频流
+- 保留搜索框和分区导航
+- 隐藏搜索页侧边栏推荐
+- 支持点击插件图标一键切换开关

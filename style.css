@@ -1,0 +1,48 @@
+/* --- 1. 核心屏蔽：隐藏视频流和冗余的频道栏 --- */
+[data-focus-mode='on'] .feed-roll-ant,
+[data-focus-mode='on'] .bili-feed4-layout,
+[data-focus-mode='on'] .recommended-container_floor-aside,
+[data-focus-mode='on'] .i_video_next_prev,
+[data-focus-mode='on'] .header-channel {   /* 重点：隐藏旧版/冗余的频道栏 */
+    display: none !important;
+}
+
+/* --- 2. 布局修复：强制顶栏高度并居中 --- */
+[data-focus-mode='on'] .bili-header {
+    min-height: 160px !important; 
+    background: #fff !important;
+    display: block !important;
+}
+
+/* 调整搜索框，给它呼吸的空间 */
+[data-focus-mode='on'] .center-search-container {
+    margin: 30px auto 10px !important; 
+    display: flex !important;
+}
+
+/* --- 3. 保留唯一的一排频道按钮 --- */
+[data-focus-mode='on'] .bili-header__channel {
+    display: flex !important;
+    visibility: visible !important;
+    justify-content: center !important; /* 居中对齐 */
+    border: none !important;
+    box-shadow: none !important;
+    margin: 0 auto !important;
+    padding: 10px 0 !important;
+    width: 90% !important;
+}
+
+/* 隐藏频道栏左侧多余的“首页/动态”图标，保持纯净 */
+[data-focus-mode='on'] .bili-header__channel .channel-icons {
+    display: none !important;
+}
+
+/* --- 4. 搜索结果页和播放页优化 --- */
+[data-focus-mode='on'] .search-page .right-container,
+[data-focus-mode='on'] .recommend-list-v1,
+[data-focus-mode='on'] .next-play {
+    display: none !important;
+}
+[data-focus-mode='on'] .search-page .left-container {
+    width: 100% !important;
+}
